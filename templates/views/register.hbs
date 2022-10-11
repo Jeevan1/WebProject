@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>login</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="logo">iTravel</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a class="nav-link home" href="/index">Home</a></li>
+                <li><a class="nav-link" href="/about">About us</a></li>
+                <li class="bc"><a class="nav-link" name="hero" href="/packages">Tour Packages</a>
+                    <!-- <ul class="sub-nav-link">
+                        <li> <a class="nav-link" href ="#" onclick="filterPackage('Pokhara')">Pokhara Tour Packages</a></li>
+                        <li> <a class="nav-link" href ="#" >Annapurna Tour Packages</a></li>
+                        <li> <a class="nav-link" href ="#" >Patan Tour Packages</a></li>
+                        <li> <a class="nav-link" href ="#" >Kathmandu</a></li>
+                        <li> <a class="nav-link" href ="#" >Bhaktapur</a></li>
+                        <li> <a class="nav-link" href ="#" >Gosainkunda</a></li>
+                    </ul> -->
+                </li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="#">Events</a></li>
+                <!-- <li><a class="nav-link" href="#">Hotels</a></li>
+                <li><a class="nav-link" href="#">Places</a></li> -->
+                <li><a class="nav-link"  href="/login">Log In</a></li>
+                <li><a class="nav-link"  style="color: red; font-size: 1rem; font-weight: 600;" href="/register">Sign Up</a></li>
+                <li><a class="nav-link" href="/contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-btn">
+            <i class="fas fa-bars navIcon" name="menu-btn"></i>
+            <i class="far fa-window-close navIcon" name="close-btn"></i>
+        </div>
+    </div>
+   
+    <div class="login-bdy">
+    <div class="container">
+        <div class="login-header">
+            <h2>Create Account</h2>
+        </div>
+        <form action="/register" method="post" class="form" id="form">
+            <p>Login to book the package.</p>
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="jeevan shrestha" id="username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="email" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>Phone No.</label>
+                <input type="number" name="phone" placeholder="Phone no" id="phone">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>password</label>
+                <input type="password" name="password" placeholder="password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>password Check</label>
+                <input type="password" name="passwords" placeholder="re-enter password" id="password2">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+   
+    {{!-- <!-- ---Footer--- --> --}}
+   {{>footer}}
+
+    <script src="js/form.js"></script>
+</body>
+</html>

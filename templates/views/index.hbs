@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="logo">iTravel</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="/index" style="color: red;  font-size: 1rem; font-weight: 600;">Home</a></li>
+                <li><a class="nav-link" href="/about">About us</a></li>
+                <li class="bc"><a class="nav-link" name="hero" href="#packages">Tour Packages</a>
+                    <ul class="sub-nav-link">
+                        <li> <a class="nav-link" href="#">Pokhara Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#">Annapurna Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#">Patan Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#">Kathmandu</a></li>
+                        <li> <a class="nav-link" href="#">Bhaktapur</a></li>
+                        <li> <a class="nav-link" href="#">Gosainkunda</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="#">Events</a></li>
+                <li><a class="nav-link" href="/register">Register</a></li>
+                <li><a class="nav-link" href="/login">Sign Up</a></li>
+                <li><a class="nav-link" href="/contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-btn">
+            <i class="fas fa-bars navIcon" name="menu-btn"></i>
+            <i class="far fa-window-close navIcon" name="close-btn"></i>
+        </div>
+    </div>
+    <div>
+        <div class="slider-search">
+            <div class="slider">
+                <img class="mySlides" alt="" src="photos/img2.jpg">
+                <img class="mySlides" alt="" src="photos/img1.jpg">
+                <img class="mySlides" alt="" src="photos/img8.jpg">
+                <img class="mySlides" alt="" src="photos/img9.jpg">
+                <img class="mySlides" alt="" src="photos/img3.jpg">
+                <img class="mySlides" alt="" src="photos/img4.jpg">
+                <img class="mySlides" alt="" src="photos/img5.jpg">
+            </div>
+
+        </div>
+        <div class="ab">
+            <button class="left" onclick="plusDivs(-1)"><</i>
+            </button>
+            <button class="right" onclick="plusDivs(1)">></button>
+        </div>
+    </div>
+    <div class="search">
+        <div class="search-navbar">
+            <ul class="nav-lists">
+                <li id="hotel-form"><button><a class="nav-links"  >HOTELS</a></button></li>
+                <li id="packages-form"><button><a class="nav-links"  >PACKAGES</a></button></li>
+                <li id="places-form"><button><a class="nav-links"  >PLACES</a></button></li>
+            </ul>
+            <form class="search-form-hotel search-form" action="">
+                <label for="hotel" class="hotel"><input type="text" placeholder="Type hotel name here..."></label>
+                <select name="choose" id="Destination" class="city-list">
+                    <option value="none" selected disabled hidden>Choose City</option>
+                    <option value="1">Kathmandu</option>
+                    <option value="2">Bhaktapur</option>
+                    <option value="3">Lalitpur</option>
+                    <option value="3">Patan</option>
+                    <option value="3">Pokhara</option>
+                </select>
+
+                <select name="choose" id="category">
+                    <option value="none" selected disabled hidden>Select Activity</option>
+                    <option value="1">Batchelor</option>
+                    <option value="2">Business</option>
+                    <option value="3">Family</option>
+                    <option value="3">Romance</option>
+                </select>
+                <select name="choose" id="duration">
+                    <option value="none" selected disabled hidden>Duration</option>
+                    <option value="1">less than 1 day</option>
+                    <option value="2">1 day</option>
+                    <option value="3">1 weak</option>
+                    <option value="4">more than 1 weak</option>
+                </select>
+                <select name="choose" id="offer">
+                    <option value="none" selected disabled hidden>Offer</option>
+                    <option value="2">Choose Offer</option>
+                </select>
+                <button type="submit" class="search-submit">FIND HOTELS</button>
+            </form>
+            <form class="search-form search-form-packages" action="">
+                <label for="hotel" class="hotel"><input type="text" placeholder="Type package name here..."></label>
+                <select name="choose" id="Destination" class="city-list">
+                    <option value="none" selected disabled hidden>Choose City</option>
+                    <option value="1">Kathmandu</option>
+                    <option value="2">Bhaktapur</option>
+                    <option value="3">Lalitpur</option>
+                    <option value="3">Patan</option>
+                    <option value="3">Pokhara</option>
+                </select>
+                <select name="choose" id="duration">
+                    <option value="none" selected disabled hidden>Duration</option>
+                    <option value="1">less than 1 day</option>
+                    <option value="2">1 day</option>
+                    <option value="3">1 weak</option>
+                    <option value="4">more than 1 weak</option>
+                </select>
+                <select name="choose" id="offer">
+                    <option value="none" selected disabled hidden>Offer</option>
+                    <option value="2">Choose Offer</option>
+                </select>
+                <button type="submit" class="search-submit">FIND PACKAGE</button>
+            </form>
+            <form class="search-form-places search-form" action="">
+                <label for="hotel" class="hotel"><input type="text" placeholder="Type place name here..."></label>
+                <select name="choose" id="Destination" class="city-list">
+                    <option value="none" selected disabled hidden>Choose City</option>
+                    <option value="1">Kathmandu</option>
+                    <option value="2">Bhaktapur</option>
+                    <option value="3">Lalitpur</option>
+                    <option value="3">Patan</option>
+                    <option value="3">Pokhara</option>
+                </select>
+                
+                <button type="submit" class="search-submit"><a href="signup.html">FIND PLACE</a></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ------body------ -->
+    <div class="main-body">
+        <div class="description">
+            <h2>Welcome to <a href="#" style="color: blue;">iTravel</a> – Best Tours and Travels in Nepal</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis necessitatibus natus qui consequuntur
+                sed ipsa dignissimos voluptates quas, at excepturi ab, animi vel quisquam cum enim deserunt. Sed, atque
+                nemo nulla velit, odit omnis, facilis quis ad ab quo cupiditate.</p>
+        </div>
+
+        <!-- -------Services------ -->
+        <div class="services">
+            <div class="services-col">
+                <div class="services-icon">
+                    <img src="photos/ser-icon1.png" alt="icon" srcset="">
+                </div>
+                <div class="services-title">
+                    <h2>Special<br>Activities</h2>
+                </div>
+                <div class="services-description">
+                    <p>Lorem ipsum dolor sit amet consectetur ad. Qui reiciendis aut? Eaque minima.</p>
+                </div>
+            </div>
+            <div class="services-col">
+                <div class="services-icon">
+                    <img src="photos/ser-icon2.png" alt="icon" srcset="">
+                </div>
+                <div class="services-title">
+                    <h2>Travel<br>Arrangements</h2>
+                </div>
+                <div class="services-description">
+                    <p>Lorem ipsum dolor sit amet elit. Qui placeat aut? Eaque atque at nam nemo minima.</p>
+                </div>
+            </div>
+            <div class="services-col">
+                <div class="services-icon">
+                    <img src="photos/ser-icon3.png" alt="icon" srcset="">
+                </div>
+                <div class="services-title">
+                    <h2>Travel<br>Guide</h2>
+                </div>
+                <div class="services-description">
+                    <p>Lorem ipsum consectetur adipisicing elit. Qui aut? Eaque atque at nam nemo minima.</p>
+                </div>
+            </div>
+            <div class="services-col">
+                <div class="services-icon">
+                    <img src="photos/ser-icon4.png" alt="icon" srcset="">
+                </div>
+                <div class="services-title">
+                    <h2>Location<br>Manager</h2>
+                </div>
+                <div class="services-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo minima.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- ------Activity------ -->
+        <div class="activity">
+            <div class="services-col">
+                <img src="photos/plane.png" alt="" srcset="">
+                <h1>1250</h1>
+                <p>Trips Made</p>
+            </div>
+            <div class="services-col">
+                <img src="photos/like.png" alt="">
+                <h1>1250 </h1>
+                <p>. . Likes</p>
+            </div>
+            <div class="services-col">
+                <img src="photos/dir.png" alt="">
+                <h1>1250</h1>
+                <p>Locations<br>Discovered</p>
+            </div>
+            <div class="services-col">
+                <img src="photos/group.png" alt="">
+                <h1>1250</h1>
+                <p>Members<br>Joined</p>
+            </div>
+        </div>
+    </div>
+    <!-- ------Packages------ -->
+    </div>
+    <div class="packages" id="packages">
+        <div class="packages-head">
+            <h2>Travel/Tour Packages</h2>
+            <div class="packages-slider">
+                <button class="slider-left" onclick="avlplusDivs(-1)"><</button>
+                <button class="slider-right" onclick="avlplusDivs(1)">></button>
+                <a href="packages.html" class="pkg-all">View all</a>
+            </div>
+
+        </div>
+        <div class="avl-package">
+            <div class="package">
+                <img src="photos/card1.jpg" alt="">
+                <div class="card">
+                    <h3 id="bktp">Bhaktapur</h3>
+                    <p>Duration: 2 Days</p>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>20 reviews</p>
+                        <p class="cost">US$300</p>
+                    </div>
+                    <a href="booknow.html" id="bkt">Book now</a>
+                    <a href="">Costumize package</a>
+
+                </div>
+            </div>
+            <div class="package">
+                <img src="photos/card2.jpg" alt="">
+                <div class="card">
+                    <h3>Mount Everest</h3>
+                    <p>Duration: 2 weeks</p>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>50 review</p>
+                        <p class="cost">US$3000</p>
+                    </div>
+                    <a href="#">Book now</a>
+                    <a href="">Costumize package</a>
+                </div>
+            </div>
+            <div class="package">
+                <img src="photos/card3.jpg" alt="">
+                <div class="card">
+                    <h3>Panch Pokhari</h3>
+                    <p>Duration: 1 weeks</p>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>357 review</p>
+                        <p class="cost">US$400</p>
+                    </div>
+                    <a href="#">Book now</a>
+                    <a href="">Costumize package</a>
+
+                </div>
+            </div>
+            <div class="package">
+                <img src="photos/img4.jpg" alt="">
+                <div class="card">
+                    <h3>Panch Pokhari</h3>
+                    <p>Duration: 1 weeks</p>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>357 review</p>
+                        <p class="cost">US$400</p>
+                    </div>
+                    <a href="#">Book now</a>
+                    <a href="">Costumize package</a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- -----Photos----- -->
+    <section class="gallery">
+        <h1>Gallery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dicta quas nam culpa temporibus nisi
+            molestiae? Nihil porro repellendus praesentium!</p>
+
+        <div class="row">
+            <div class="gal-col">
+                <img src="photos/aa.jpeg" alt="">
+                <div class="layer">
+                    <h3>Bhaktapur</h3>
+                </div>
+            </div>
+            <div class="gal-col">
+                <img src="photos/dec.png" alt="">
+                <div class="layer">
+                    <h3>Pokhara</h3>
+                </div>
+            </div>
+            <div class="gal-col">
+                <img src="photos/view.jpg" alt="">
+                <div class="layer">
+                    <h3>Sagarmatha</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <h1>Review</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dicta quas nam culpa temporibus nisi
+            molestiae? Nihil porro repellendus praesentium!</p>
+
+        <div class="rev-row">
+            <div class="rev-col">
+                <img src="photos/group.png" alt="">
+                <div>
+                    <p>Superb! </p>
+                    <h3>Harish Bhatta</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="rev-col">
+                <img src="photos/group.png" alt="">
+                <div>
+                    <p>Very nice website.</p>
+                    <h3>Prakash</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="rev-col">
+                <img src="photos/group.png" alt="">
+                <div>
+                    <p>Best!</p>
+                    <h3>Phul</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---Call to Acton--- -->
+    <section class="cta">
+        <h1>Visit <b>Itravel</b> To <br> Enjoy The Travel and Nature</h1>
+        <a href="contact.html" class="hero-btn">Contact Us</a>
+    </section>
+
+
+    <!-- ------JavaScript for toggle menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-- ---Footer--- -->
+    {{>footer}}
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;      
+            
+        } 
+        body{
+            background-image: url("photos/bgi.jpg" );
+            height: 100%; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .login{
+            border: 2px solid brown;
+            width: 300px;
+            height: 450px;
+            /* background: url("photos/bgi.jpg"); */
+            align-items: center;
+            position: relative;
+            top: 200px;
+            justify-content: center;
+            margin: auto;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        
+        
+        img{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            position: relative;
+            top: -50px;
+            left: 35%;
+            left: calc(50%, -50%);
+        }
+        .input{
+            margin-left: 50px;
+        }
+        .input p{
+            color: aliceblue;
+            padding: 0px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        .input h2{
+            color: rgb(233, 238, 253);
+            margin: 0px;
+            padding-bottom: 20px;
+        }
+        .input input[type="email"], input[type="password"] {
+            border: none;
+            border-bottom: 2px solid rgb(225, 41, 41);
+            background: transparent;
+            outline: none;
+            height: 40px;
+        }
+        button{
+            width: 80%;
+            height: 30px;
+            font-size: 15px;
+            color: white;
+            background-color: rgb(22, 229, 56);
+            border-radius: 50px;
+        }
+        .help{
+            margin-top: 20px;
+        }
+        .help a{
+            
+            color: rgb(51, 88, 126);
+            font-weight: bold;
+            font-size: 11px;
+            position: relative;
+            left: -10px;
+        }
+        
+        #alert{
+            color: rgb(245, 16, 16);
+            font-size: 10px;
+            display: block;
+            
+        }
+        #alert::after{
+            color: rgb(26, 221, 85);
+            font-size: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+        <div class="header">
+            <h1 class="logo">iTravel</h1>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="/index">Home</a></li>
+                    <li><a class="nav-link" href="/about">About us</a></li>
+                    <li class="bc"><a class="nav-link" name="hero" href="/packages">Tour Packages</a>
+                        <!-- <ul class="sub-nav-link">
+                            <li> <a class="nav-link" href ="#">Pokhara Tour Packages</a></li>
+                            <li> <a class="nav-link" href ="#" >Annapurna Tour Packages</a></li>
+                            <li> <a class="nav-link" href ="#" >Patan Tour Packages</a></li>
+                            <li> <a class="nav-link" href ="#" >Kathmandu</a></li>
+                            <li> <a class="nav-link" href ="#" >Bhaktapur</a></li>
+                            <li> <a class="nav-link" href ="#" >Gosainkunda</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                    <li><a class="nav-link" href="#">Events</a></li>
+                    <!-- <li><a class="nav-link" href="#">Hotels</a></li>
+                    <li><a class="nav-link" href="#">Places</a></li> -->
+                    <li><a class="nav-link" href="/login"  style="color: red;  font-size: 1rem; font-weight: 600;">Login</a></li>
+                <li><a class="nav-link" href="/register">Sign Up</a></li>
+                    <li><a class="nav-link" href="/contact" >Contact Us</a></li>
+                </ul>
+    
+            </nav>
+            <div class="nav-btn">
+                <i class="fas fa-bars navIcon" name="menu-btn"></i>
+                <i class="far fa-window-close navIcon" name="close-btn"></i>
+            </div>
+        </div>
+    <section id="hero">
+        <div class="login">
+            <h1>l</h1>
+            <div class="input">
+                <h2>Login page</h2>
+                <form action="/login" method="post" id="form">
+                <p>Email</p>
+                <input type="email" name="email" id="name" placeholder="Enter email" required>
+                <span id="alert"></span>
+                <p>Password</p>
+                <input type="password" name="password" id="pass" placeholder="Enter password" required><br><br>
+                <button type="submit" value="submit" >Submit</button>
+                </form>
+                <div class="help">
+                <a href="/login">Lost your password?</a><br>
+                <a href="/register">Don't have an account?</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+    <script>
+        function formValidation(){
+            var name = document.getElementById('name').value;
+            if(name.length<5){
+                document.getElementById('alert').innerHTML="please enter name";
+            }
+            else{
+                document.getElementById('alert').innerHTML="Valid Username";
+            }
+        }
+    </script>
+   
+</body>
+</html>

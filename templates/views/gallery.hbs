@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo">iTravel</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="/index">Home</a></li>
+                <li><a class="nav-link" href="/about">About us</a></li>
+                <li class="bc"><a class="nav-link" name="hero" href="/packages">Tour Packages</a>
+                    <!-- <ul class="sub-nav-link">
+                        <li> <a class="nav-link" href="#">Pokhara Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#">Annapurna Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#">Patan Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#">Kathmandu</a></li>
+                        <li> <a class="nav-link" href="#">Bhaktapur</a></li>
+                        <li> <a class="nav-link" href="#">Gosainkunda</a></li>
+                    </ul> -->
+                </li>
+                <li><a class="nav-link" href="/gallery" style="color: red;  font-size: 1rem; font-weight: 600;">Gallery</a></li>
+                <li><a class="nav-link" href="#">Events</a></li>
+                <!-- <li><a class="nav-link" href="#">Hotels</a></li>
+                <li><a class="nav-link" href="#">Places</a></li> -->
+                <li><a class="nav-link" href="/login">Login</a></li>
+                <li><a class="nav-link" href="/register">Sign Up</a></li>
+                <li><a class="nav-link" href="/contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-btn">
+            <i class="fas fa-bars navIcon" name="menu-btn"></i>
+            <i class="far fa-window-close navIcon" name="close-btn"></i>
+        </div>
+    </div>
+    <div class="Gallery">
+        <div class="head">
+            <h2>Gallery</h2>
+        </div>
+        <div class="gallery-row">
+            <div class="gal-head">
+                <h2>Kathmandu</h2>
+                <div class="abc">
+                    <button class="left-gal" onclick="plusDivs(-1)"><</i>
+                    </button>
+                    <button class="right-gal" onclick="plusDivs(1)">></button>
+                </div>
+            </div>
+            <div class="gallery-col">
+                <div class="img">
+                    <img src="photos/ktm/1.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/ktm/2.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/ktm/5.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/ktm/4.webp" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-row">
+            <div class="gal-head">
+                <h2>Bhaktapur</h2>
+                <div class="abc">
+                    <button class="left-gal" onclick="plusDivs(-1)"><</i>
+                    </button>
+                    <button class="right-gal" onclick="plusDivs(1)">></button>
+                </div>
+            </div>
+            <div class="gallery-col">
+                <div class="img">
+                    <img src="photos/bkt/1.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/bkt/2.png" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-row">
+            <div class="gal-head">
+                <h2>Rasuwa</h2>
+                <div class="abc">
+                    <button class="left-gal" onclick="plusDivs(-1)"><</i>
+                    </button>
+                    <button class="right-gal" onclick="plusDivs(1)">></button>
+                </div>
+            </div>
+            <div class="gallery-col">
+                <div class="img">
+                    <img src="photos/rwa/1.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/rwa/2.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/rwa/3.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/rwa/4.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+        </div>
+        <div class="gallery-row">
+            <div class="gal-head">
+                <h2>Pokhara</h2>
+                <div class="abc">
+                    <button class="left-gal" onclick="plusDivs(-1)"><</i>
+                    </button>
+                    <button class="right-gal" onclick="plusDivs(1)">></button>
+                </div>
+            </div>
+            <div class="gallery-col">
+                <div class="img">
+                    <img src="photos/pkh/1.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/pkh/2.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/pkh/3.jfif" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+                <div class="img">
+                    <img src="photos/pkh/4.jpg" alt="">
+                    <h5>Kathmandu Darbar Square</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- ---Footer--- -->
+    {{>footer}}
+    <script src="index.js"></script>
+    <!-- <script src="gallery.js"></script> -->
+</body>
+</html>

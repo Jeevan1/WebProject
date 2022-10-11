@@ -1,0 +1,138 @@
+/* ---About us page--- */
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    /* height: 300px; */
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+    color: rgb(64, 60, 60);
+}
+.about-col p{
+    font-size: 14px ;
+    line-height: 1.4rem;
+    padding: 15px 0 25px;
+    color: rgb(138, 129, 129);
+}
+.red-btn{
+    border: 1px solid #a23930;
+    background: transparent;
+    color: #121212;
+}
+.red-btn:hover{
+    background: rgb(41, 168, 41);
+    color: rgb(242, 242, 242);
+    border-radius: 1px;
+}
+
+.teams{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.teams h2{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #2e2c2c;
+    border-bottom: 1px solid rgb(191, 167, 167);
+}
+.teams h2::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    text-align: center;
+    margin: auto;
+    background: rgb(83, 152, 82);
+    display: block;
+    margin-top: 5px;
+
+}
+.teams p{
+     color: #5c5454;
+}
+
+.teams .row{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.row .team-col{
+    flex-basis: 33%;
+    padding: 20px 10px;
+}
+.row .team-col img{
+    height: 85px;
+    width: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+}
+.about-team{
+    border: 1px solid rgb(162, 145, 145);
+    line-height: 1.7rem;
+    padding: 50px 10px 30px 10px;
+}
+.about-team h4{
+    color: #433c3c;
+}
+.about-team h5{
+    font-size: 12px;
+    color: #b19f9f;
+}
+.about-team .team-desc{
+    font-size: 14px;
+    color: #7d7070;
+    margin-top: 10px;
+}
+.team-id{
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid rgb(206, 189, 189);
+    display: flex;
+}
+.team-id a{
+    border-right: 1px solid rgb(206, 189, 189);
+    flex-basis: 25%;
+    padding: 13px 5px;
+}
+@media(max-width: 1000px){
+    .row{
+        display: inline-block;
+    }
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+    background: url("photos/bg-activity.jpg");
+    background-size: cover;
+    line-height: 1.5rem;
+    display: block;
+    border-radius: 5px;
+}
+.about h1{
+    color: #433c3c;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.about p{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}

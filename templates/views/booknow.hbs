@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d95f511298.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/formstyle.css">
+</head>
+<body>
+    
+    <div class="main-body">
+        {{>navbar}}
+        <div class="container">
+            <div class="book-header">
+                <p style="font-weight: bold; padding-bottom: 5px;">Booking Details</p>
+                <p class="log" style="border: 1px solid red; font-size: 14px; color:rgb(136, 135, 135); padding:5px;" ><a href="/login" style="color: blue;">Login</a> to book your package & more</p>
+            </div>
+            <form class="form" id="form" action="/booknow" method="post">
+                {{!-- <div class="form-control">
+                    <label>Username</label>
+                    <input type="text" placeholder="username" id="username" name="username">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div> --}}
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="email" id="email" name="email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label>Phone No.</label>
+                    <input type="number" placeholder="Phone no" id="phone" name="phone">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                {{!-- <div class="form-control">
+                    <label>Proposed/Estimated Date</label>
+                    <input type="date" placeholder="Phone no" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div> --}}
+                {{!-- <div class="category">
+                    <label for="category"><b>Package Category</b><br>
+                    <input type="radio" name="category" value="lucury" checked>Lucury
+                    <input type="radio" name="category" value="confort">Confort
+                    <input type="radio" name="category" value="standard">Standard
+                    <input type="radio" name="category" value="budget">Budget
+                </label>
+                </div>
+                <div class="Adv-pay">
+                    <label for="Adv-pay"><b>Advance Pay</b><br>
+                    <input type="radio" name="Adv-pay" value="lucury" checked>40%
+                    <input type="radio" name="Adv-pay" value="confort">60%
+                    <input type="radio" name="Adv-pay" value="standard">100%
+                </label> --}}
+                {{!-- </div> --}}
+                <button type="submit" value="submit" style="cursor: pointer;">Proceed to Pay</button>
+                <button type="reset" id="s">Costumize</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/form.js"></script>
+    <script src="ls/book.js"></script>
+</body>
+</html>

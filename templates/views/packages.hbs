@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/packages.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo">iTravel</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="/index">Home</a></li>
+                <li><a class="nav-link" href="/about">About us</a></li>
+                <li class="bc"><a class="nav-link" name="hero" href="" onclick="filterPackage('All')"  style="color: red;  font-size: 1rem; font-weight: 600;">Tour Packages</a>
+                    <ul class="sub-nav-link">
+                        <li> <a class="nav-link" href="#" onclick="filterPackage('Pokhara')">Pokhara Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#" onclick="filterPackage('Rasuwa')">Annapurna Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#">Patan Tour Packages</a></li>
+                        <li> <a class="nav-link" href="#" onclick= "filterPackage('Kathmandu')">Kathmandu</a></li>
+                        <li> <a class="nav-link" href="#" onclick="filterPackage('Bhaktapur')">Bhaktapur</a></li>
+                        <li> <a class="nav-link" href="#" onclick="filterPackage('Rasuwa')">Gosainkunda</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="#">Events</a></li>
+                <!-- <li><a class="nav-link" href="#">Hotels</a></li>
+                <li><a class="nav-link" href="#">Places</a></li> -->
+                <li><a class="nav-link" href="/login">Login</a></li>
+                <li><a class="nav-link" href="/register">Sign Up</a></li>
+                <li><a class="nav-link" href="/contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-btn">
+            <i class="fas fa-bars navIcon" name="menu-btn"></i>
+            <i class="far fa-window-close navIcon" name="close-btn"></i>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Tour Packages</h2>
+    <div class="pkg-search">
+        <input type="text" id="search-place" placeholder="Search your Trip..">
+        <button type="" id ="search">search</button>
+    </div>
+    <div id="buttons">
+        <button class="button-value" onclick="filterPackage('all')" type="">All</button>
+        <!-- <button class="button-value" onclick="filterPackage('Bhakapur')" type="">Gosainkunda Tour packages</button> -->
+        <button class="button-value" onclick="filterPackage('Pokhara')" type="">Pokhara</button>
+        <button class="button-value" onclick="filterPackage('Rasuwa')" type="">Rasuwa</button>
+        <button class="button-value" onclick="filterPackage('Bhaktapur')" type="">Bhaktapur</button>
+        <button class="button-value" onclick="filterPackage('Kathmandu')" type="">Kathmandu</button>
+    </div>
+    <div id="packages">
+    </div>
+ <!-- ---Footer--- -->
+ {{>footer}}
+ 
+</div>
+   
+    <script src="js/packages.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
